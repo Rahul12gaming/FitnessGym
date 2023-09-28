@@ -491,6 +491,10 @@ input
         padding-left: 20px;
         padding-right: 20px;
     }
+    .training-page img
+    {
+        width:80%;
+    }
 }
 
 .advertise-banner
