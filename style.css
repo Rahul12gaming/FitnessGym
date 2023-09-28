@@ -1,0 +1,685 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body
+{
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.fa-solid
+{
+    color: #fff;
+    height: 2rem;
+}
+nav
+{
+    
+    height: 90px;
+    display: flex;
+    background-color: #000000;
+    justify-content: space-around;
+    align-items: center;
+   
+    z-index: 2;
+    top: 0;
+   
+}
+.navbar-brand img
+{
+    width: 100px;
+    height: 100px;
+}
+.navbar-brand span
+{
+    font-size: 26px;
+    font-weight: 700;
+    font-family: monospace;
+}
+.fa-solid
+{
+    font-size: 2rem;
+}
+.navbar.sticky
+{
+   
+    position: fixed;
+    height: 90px;
+    top: 0px;
+    z-index: inherit;
+}
+.sidebar
+{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: #000000;
+    z-index: 100;
+    transition: all ease 0.5s;
+   
+   
+}
+.sidebar.active
+{
+    display: block;
+    left: 0;
+   
+}
+.hr
+{
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+.sidebar-content
+{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: white;
+   
+}
+.sidebar-content a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    margin: 10px;
+}
+.fa-xmark
+{
+    position: relative;
+    margin-left: 200px; 
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+.toogle-bar span{
+    
+    display: block;
+    margin-bottom: 5px;
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* .navbar-brand img
+{
+    width: 50px;
+    height: 50px;
+} */
+
+.thumbnail-section
+{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.thumbnail-logo
+{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.thumbnail-logo img
+{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+.thumbnail-logo a
+{
+    gap: 5px;
+    white-space: nowrap;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 16px;
+}
+.thumbnail
+{
+    
+    width:500px;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('https://i.ytimg.com/vi/YrQpafPoJ_I/sddefault.jpg?sqp=-oaymwEmCIAFEOAD8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGD4gVihyMA8=&rs=AOn4CLCsGtFsPmgCj2DYL3GYwS5KGoE7_g');
+}
+.yt
+{
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.yt button
+{
+    width: 80px;
+    background-color: transparent;
+    border: none;
+}
+.f1
+{
+    font-size: 20px;
+}
+.services
+{
+    border: 1px solid black;
+    padding: 50px;
+    text-align: center;
+}
+h3
+{
+    color: yellow;
+}
+.service
+{
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 80px;
+    align-items: center;
+}
+.content
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+.content img
+{
+    width: 80px;
+    height: 60px;
+}
+
+.carousel
+{
+    width: 800px;
+    
+}
+.carousel-inner
+{
+    display: flex;
+}
+.container2
+{
+    background-color: #000000;
+    opacity: 0.9;
+    text-align: center;
+   padding: 60px;
+   border: 1px solid white;
+   
+  
+}
+
+.card-container
+{
+    text-align: center;
+    gap: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.span
+{
+    color: black;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+footer
+{
+    padding: 50px;
+    height: fit-content;
+    background-image: url('https://goldsgym.in/assets/images/footer-bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.footer-content
+{
+  
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  
+}
+.footer-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-container a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.text
+{
+    margin: 0;
+    font-weight: 700;
+}
+input
+{
+    background-color: transparent;
+    border: 3px solid #fff;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+}
+.socials
+{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.socials span
+{
+    background-color: #fff;
+   padding: 10px;
+    text-align: center;
+    color: black;
+    
+}
+.socials span:hover
+{
+    background-color: gray;
+}
+.news
+{
+    word-break: break-all;
+    align-items: center;
+    display: flex;
+    margin-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+.news a
+{
+    padding: 20px;
+}
+.news img
+{
+    width: 20px;
+    height: 20px;
+}
+.footer
+{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.img
+{
+    display: flex;
+    gap: 10px;
+}
+.img img
+{
+    width: 150px;
+}
+.up span
+{
+    cursor: pointer;
+    background-color: yellow;
+    padding: 15px;
+    border-radius: 50%;
+}
+.up:hover
+{
+    transform: scale(1.2);
+}
+
+.card:hover
+{
+    transition: all ease-in-out  0.5s;
+    transform: scale(0.9);
+    overflow: hidden;
+}
+
+.gallery
+{
+    height: 70vh;
+    background-image: url('https://goldsgym.in/assets/images/banner.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.gallery-content 
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.gallery-content h2
+{
+    margin-top: 20%;
+    color: #ffb006;
+    font-size: 38px;
+    font-weight: 700;
+    border-bottom: 4px solid #fff;
+   
+}
+.image-collection
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+    margin-bottom: 10px;
+}
+.image-collection img
+{
+    width:300px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+.image-btns 
+{
+    margin-top: 10px;
+    display: grid;
+    place-items: center;
+}
+.image-btns button
+{
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+  
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+}
+.top-head
+{
+    background-color: #ffe400;
+    transition: all ease 0.5s;
+    color: #000000;
+    font-weight: 700;
+
+}
+.head
+{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  font-size: 12px;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+   text-align: center;  
+}
+
+.address
+{
+    width: 692px;
+    word-wrap: wrap;
+    word-break: break-all;
+
+}
+.sticky
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+@media screen and (max-width:720px) {
+    footer
+    {
+        padding: 20px;
+    }
+    .footer-container
+    {
+        margin-bottom: 10px;
+    }
+    .footer
+    {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .thumbnail-section
+    {
+        padding: 10px;
+    }
+    .thumbnail
+    {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    
+    .head
+    {
+        margin-left: 20px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        align-items: flex-start;
+
+    }
+    .head p
+    {
+        margin: 0;
+    }
+    .address
+    {
+        width: 80%;
+    }
+    .container3 h3
+    {
+        margin-top: 50px;
+        font-size: 22px;
+        padding: 20px;
+    }
+    .navbar-brand .span
+    {
+        font-size: 20px;
+    }
+    .gym-content
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.advertise-banner
+{
+    background: url('https://goldsgym.in/uploads/slider/compress-banner-16.jpg') rgba(0,0,0,0.34);
+   background-size: cover;
+    background-blend-mode: multiply;
+    height: 450px;
+    color: #000000;
+}
+.container3
+{
+    display: grid;
+    place-items: center;
+    font-size: 28px;
+    
+}
+.container3 h3{
+    word-break: break-all;
+    margin-top: 150px;
+}
+.container3 h3 span
+{
+    color: #ffb006;
+}
+.training-page h3
+{
+    margin-top: 50px;
+    color: #323232;
+    font-weight: 700;
+}
+.training-page span
+{
+    color: #dfc801;
+}
+.franchise
+{
+    background: url('https://goldsgym.in/uploads/slider/compress-Untitled-1.jpg');
+    height: 450px;
+    background-position: top center;
+    background-size: cover;
+}
+.fran-content 
+{
+ 
+    text-align: center;
+    color: #ffb006;
+}
+.fran-content h2{
+    padding-top: 200px;
+}
+.fran-content span
+{
+    color: #fff;
+    font-weight: 700;
+}
+.frachise-cont p
+{
+    font-size: 16px;
+    color: #7d7d7d;
+}
+.forpad
+{
+    padding-left: 15px;margin-bottom: 20px;
+    float: left;
+    width: 100%;
+}
+.forpad input
+{
+    color: #323232;
+    font-size: 12px;
+    padding: 12px;
+   border-radius: 0px;
+   
+}
+.forpad select
+{
+    color: #323232;
+    font-size: 12px;
+    padding: 10px;
+   border-radius: 0px;
+   
+}
+.btn-franchise
+{
+    width: 100px;
+    height: 40px;
+    border: 2px solid black;
+    background-color: #ffe400;
+    margin-bottom: 20px;
+}
+.contact
+{
+    background: url('https://goldsgym.in/assets/images/contact.jpg');
+    height: 450px;
+    background-position: top center;
+    background-size: cover;
+    border-bottom: 1px solid #fff;
+}
+.forinput input
+{
+    color: #323232;
+    font-size: 12px;
+    padding: 12px;
+   border-radius: 0px;
+   width: 100%;
+}
+.training-page ul{
+    list-style: none;
+}
+.training-page ul li::before
+{
+    content: "ï†’";
+    position: relative;
+    color: #dfc801;
+    left: -5px;
+}
+.training-page ul li 
+{
+    
+    font-size: 12px;font-weight: 700;
+    margin-bottom: 5px;
+}
+.training-page .regu
+{
+    padding: 20px;
+   
+    box-sizing: border-box;
+}
+.contact-us
+{
+    background: url('https://goldsgym.in/assets/frontend/css/cont.jpg');
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    color: #7d7d7d;
+    font-weight: 700;
+    padding: 70px 0px;
+    text-align: center;
+}
+.fa
+{
+    color: #fff;
+    font-size: 4rem;
+}
+.gym
+{
+    height: 450px;
+    background-color: #000000;
+    border: 1px solid white;
+    
+}
+.gym-content
+{
+    text-align: center;
+    margin-top: 100px;
+}
+.gym-content h1
+{
+    color: #fff;
+    font-size: 30px;
+}
+.gym-content span
+{
+    color: #ffb006;
+    font-size: 26px;
+    font-weight: 600;
+    word-break: break-all;
+}
+.gym-content .fa-solid
+{
+    margin-bottom: 40px;
+    font-size: 4rem;
+    color: #dfc801;
+}
+.back-btn
+{
+    margin-top: 30px;
+}
+.back
+{
+    cursor: pointer;
+    text-decoration: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+    background-color: #eba000;
+    color: #000000;
+    border: 2px solid #fff;
+    font-weight: 700;
+}
